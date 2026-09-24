@@ -12,7 +12,7 @@ public class App {
     public static void main(String[] args) throws IOException {
 
         HttpServer server = HttpServer.create(
-                new InetSocketAddress(8080), 0);
+                new InetSocketAddress(8081), 0);
 
         server.createContext("/", exchange -> {
 
@@ -44,6 +44,6 @@ public class App {
 
         server.start();
 
-        System.out.println("Application started on port 8080");
+        System.out.println("Application started on port 8081");
     }
 }
